@@ -129,7 +129,7 @@ template<class T1,
         }
         
         
-        void changeKey(T1 key,T2 value){
+        void changeAtKey(T1 key,T2 value){
             if(m[key]==0){
                 std::cout<<"No Such Key Exist";
                 return;
@@ -179,8 +179,8 @@ int main(){
     std::cout<<ipq.top().first<<" "<<ipq.top().second<<"\n";
     
     //changing Value using  keys
-    ipq.changeKey(3,2);
-    ipq.changeKey(1,9);
+    ipq.changeAtKey(3,2);
+    ipq.changeAtKey(1,9);
 
     //See change in top when we change the key value
     std::cout<<ipq.top().first<<" "<<ipq.top().second<<"\n";
