@@ -7,11 +7,11 @@
 template <class T1,
           class T2,
           class Comparator = std::less<T2>,
-          class Hash = std::hash<T1>
->class indexed_priority_queue
+          class Hash = std::hash<T1>>
+class indexed_priority_queue
 {
     // Storing indices of values using key
-    std::unordered_map<T1, long long int,Hash> m;
+    std::unordered_map<T1, long long int, Hash> m;
 
     // Container
     std::vector<std::pair<T1, T2>> v;
@@ -202,7 +202,7 @@ int main()
 
     //Displaying Size
     std::cout << ipq.size() << "\n";
- 
+
     //Checking if empty
     std::cout << ipq.empty() << "\n";
 
